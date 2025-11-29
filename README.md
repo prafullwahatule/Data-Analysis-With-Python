@@ -193,11 +193,10 @@ This repository is designed for beginners and intermediate learners who want a c
 ---
 
 # 👨‍💻 Author
-**Prafull Wahatule**  
-_Data Analyst | Python | SQL | Power BI_
+**👤 Name:** Prafull Wahatule  
+**📧 Email:** [prafullwahatule@gmail.com](mailto:prafullwahatule@gmail.com)  
+**💻 GitHub:** [https://github.com/prafullwahatule](https://github.com/prafullwahatule)  
+**🔗 LinkedIn:** [https://www.linkedin.com/in/prafullwahatule/](https://www.linkedin.com/in/prafullwahatule/)  
+**🌐 Portfolio:** [https://prafullwahatule.github.io/portfolio/](https://prafullwahatule.github.io/portfolio/)
 
 ---
-
-# 📜 License
-This project is licensed under the **MIT License**.
-
