@@ -1,0 +1,233 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "3bb7af1d-7a97-49d8-8833-c4a1dd3678dc",
+   "metadata": {},
+   "source": [
+    "# NumPy Array Internal"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "41752bb2-351d-41de-a042-bd84f9cda8b6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "eef8e9ff-5fb3-4e07-ac3f-84443a52d5d4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "array1d = [10,45,63]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "cdf9d76d-7c49-40e6-9487-64ddd0606c1f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "10\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(array1d[0])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "086c1ac8-f452-4787-8aed-43cb9bbf5a35",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "arr2d = np.random.randint(30,50, size = (2,2))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "841e30ca-372a-43cf-9be3-eb9f6f8dac7b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[39 43]\n",
+      " [49 41]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(arr2d)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "67955727-467e-4123-b88d-14e3991fbe6c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "np.int32(49)"
+      ]
+     },
+     "execution_count": 12,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "arr2d[1][0]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "3066a4be-10c7-440e-b49c-0771866da516",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(arr2d.ndim) # Return Dimenstion of array"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "092e1d29-89ee-4a68-acb5-5bd7e3f84ed4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "arr1d = np.array(array1d, dtype = np.int16)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "a2708dac-0aa7-4700-80e8-ee03b6b7a550",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(arr1d.ndim)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "febe29df-a6cf-443d-a5da-90955230653a",
+   "metadata": {},
+   "source": [
+    " # What is Shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "0169f6a1-a4ff-4cee-835f-678beba05ad9",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(3,)"
+      ]
+     },
+     "execution_count": 20,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "arr1d.shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "45a9167d-3f78-4cfb-95d9-3d0610ae8684",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(2, 2)"
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "arr2d.shape"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "42cfcf51-39b0-4d95-aae3-4a3c62796ff4",
+   "metadata": {},
+   "source": [
+    "# What is Strides"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "6dc860ad-7667-4a5d-8644-83675dcc5da3",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
